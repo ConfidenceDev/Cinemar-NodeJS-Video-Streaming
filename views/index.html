@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Cinemar is a free live streaming platform to build an audience"
+    />
+    <meta name="keywords" content="cinemar, cinema live, live stream, video" />
+    <meta name="author" content="Cinemar" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/media.css" />
+    <title>Cinemar | Live Stream</title>
+  </head>
+  <body>
+    <section class="main container grid">
+      <div class="left">
+        <video class="stream" controls autoplay muted>
+          <source src="/media" type="video/mp4" />
+        </video>
+      </div>
+      <div class="right">
+        <div class="comment_container card">
+          <ul id="comment_list">
+            <li>
+              <div class="comment_item">
+                <label class="username">Joe</label>
+                <label class="date">123-12-34345</label>
+                <label class="content">Hello World!</label>
+                <hr class="item_divider" />
+              </div>
+            </li>
+            <li>
+              <div class="comment_item">
+                <label class="username">Joe</label>
+                <label class="date">123-12-34345</label>
+                <label class="content">Hello World!</label>
+                <hr class="item_divider" />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="comment_input card">
+          <input
+            type="text"
+            class="comment_field"
+            autocomplete="off"
+            placeholder="Write..."
+          />
+          <img
+            src="./assets/icons/send.png"
+            alt="send"
+            class="send_btn comment_btns"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h3 class="copyright">
+        Cinemar &#169; 2022 copyright all rights reserved
+      </h3>
+    </footer>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
